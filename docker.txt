@@ -1,0 +1,121 @@
+========================================================================
+
+GUIA DE COMANDOS DOCKER: MYSQL Y POSTGRESQL (PERSISTENTES)
+
+========================================================================
+
+
+
+NOTA IMPORTANTE:
+
+Para que un contenedor NO se borre al pararlo, asegurate de NO incluir
+
+el parametro "--rm" en el comando "docker run".
+
+
+
+------------------------------------------------------------------------
+
+1. ABRIR LA TERMINAL EN LA CARPETA DOCUMENTOS
+
+------------------------------------------------------------------------
+
+- Abre la carpeta Documentos en el Explorador de archivos.
+
+- Haz clic en la barra de direcciones arriba, escribe "powershell" y
+
+  pulsa Enter (o clic derecho > Abrir en Terminal).
+
+
+
+------------------------------------------------------------------------
+
+2. CREAR LAS CARPETAS PARA GUARDAR LOS DATOS
+
+------------------------------------------------------------------------
+
+mkdir docker_mysql_nuevo
+
+mkdir docker_postgres_nuevo
+
+
+
+------------------------------------------------------------------------
+
+3. CREAR EL CONTENEDOR DE MYSQL
+
+------------------------------------------------------------------------
+
+(Si ya tienes otro MySQL encendido en el puerto 3306, paralo antes o
+
+cambia "-p 3306:3306" por "-p 3307:3306")
+
+
+
+docker run -d --name mysql_nuevo -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -v "${PWD}\docker_mysql_nuevo:/var/lib/mysql" mysql:8.0
+
+
+
+------------------------------------------------------------------------
+
+4. CREAR EL CONTENEDOR DE POSTGRESQL
+
+------------------------------------------------------------------------
+
+docker run -d --name postgres_nuevo -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=mi_bd -p 5432:5432 -v "${PWD}\docker_postgres_nuevo:/var/lib/postgresql" postgres:18
+
+
+
+--- ALTERNATIVA PARA POSTGRESQL EN WINDOWS (SI DA ERROR DE PERMISOS) ---
+
+Si postgres_nuevo se para nada mas arrancar por permisos de Windows en
+
+la carpeta Documentos, borralo y crealo usando un volumen de Docker:
+
+
+
+docker run -d --name postgres_nuevo -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=mi_bd -p 5432:5432 -v postgres_nuevo_data:/var/lib/postgresql postgres:18
+
+
+
+------------------------------------------------------------------------
+
+5. COMANDOS PARA EL DIA A DIA (NO VOLVER A USAR "docker run")
+
+------------------------------------------------------------------------
+
+
+
+-- ARRANCAR (ENCENDER) --
+
+docker start mysql_nuevo
+
+docker start postgres_nuevo
+
+
+
+-- PARAR (SE QUEDAN GUARDADOS) --
+
+docker stop mysql_nuevo
+
+docker stop postgres_nuevo
+
+
+
+-- VER TODOS LOS CONTENEDORES (ENCENDIDOS Y PARADOS) --
+
+docker ps -a
+
+
+
+-- ENTRAR A LA CONSOLA SQL DENTRO DE CADA CONTENEDOR --
+
+MySQL:
+
+docker exec -it mysql_nuevo mysql -u root -p
+
+
+
+PostgreSQL:
+
+docker exec -it postgres_nuevo psql -U postgres -d mi_bd

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Catalogo>
+    
+    <Juego id="J01" plataforma="PC">   
+        <Titulo>Hollow Knight</Titulo>
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Estudio>Team Cherry</Estudio>
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Lanzamiento>2017</Lanzamiento>
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Precio>14.99</Precio>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </Juego>
+                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Juego id="J02" plataforma="Switch">
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Titulo>The Legend of Zelda: Tears of the Kingdom</Titulo>
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Estudio>Nintendo</Estudio>
+        
+        <Lanzamiento>2023</Lanzamiento>
+        <Precio>69.99</Precio>
+    
+    </Juego>
+    <Juego id="J03" plataforma="PS5">
+    
+        <Titulo>God of War Ragnarök</Titulo>
+        <Estudio>Santa Monica Studio</Estudio>
+        
+        <Lanzamiento>2022</Lanzamiento>
+        <Precio>79.99</Precio>
+                                                
+    </Juego>
+    <Juego id="J04" plataforma="PC">
+        <Titulo>Hades</Titulo>
+        
+        <Estudio>Supergiant Games</Estudio>
+                                                                                        
+        
+        <Lanzamiento>2020</Lanzamiento>
+        <Precio>24.50</Precio>
+    
+    </Juego>
+    
+    <Juego id="J05" plataforma="Switch">
+        <Titulo>Metroid Dread</Titulo>
+        
+        <Estudio>MercurySteam</Estudio>
+        
+        <Lanzamiento>2021</Lanzamiento>
+        
+        <Precio>59.99</Precio>
+    
+    </Juego>
+    
+    <Juego Id="id" Plataforma="plataforma">
+                
+        <Titulo>titulo</Titulo>
+                
+        <Estudio>estudio</Estudio>
+                
+        <Lanzamiento>lanzamiento</Lanzamiento>
+                
+        <Precio>precio</Precio>
+            
+    </Juego>
+    
+</Catalogo>

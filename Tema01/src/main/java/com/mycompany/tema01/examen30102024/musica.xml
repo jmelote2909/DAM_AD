@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Musica>
+    <Disco genero="flamenco">
+        <Autor>Camarón de la Isla</Autor>
+        <Titulo>La leyenda del tiempo</Titulo>
+        <Anyo>1979</Anyo>
+        <Discografica>PolyGram Ibérica, S.A.</Discografica>
+    </Disco>
+    <Disco genero="flamenco">
+        <Autor>José Mercé</Autor>
+        <Titulo>Aire</Titulo>
+        <Anyo>2000</Anyo>
+        <Discografica>Virgin Records España S.A.</Discografica>
+    </Disco>
+    <Disco genero="clasica">
+        <Autor>AntonioVivaldi</Autor>
+        <Titulo>Concerti</Titulo>
+        <Anyo>2003</Anyo>
+        <Discografica>Musica ad Rhenum</Discografica>
+    </Disco>
+    <Disco genero="clasica">
+        <Autor>Johann Johannsson</Autor>
+        <Titulo>Orphee</Titulo>
+        <Anyo>2016</Anyo>
+        <Discografica>Deutsche Grammophon</Discografica>
+    </Disco>
+    <Disco genero="pop">
+        <Autor>The Beatles</Autor>
+        <Titulo>Abbey Road</Titulo>
+        <Anyo>1969</Anyo>
+        <Discografica> Apple Records</Discografica>
+    </Disco>
+    <Disco genero="pop">
+        <Autor>El Ultimo de la fila</Autor>
+        <Titulo>Insurreccion</Titulo>
+        <Anyo>1986</Anyo>
+        <Discografica>PDI</Discografica>
+    </Disco>
+</Musica>

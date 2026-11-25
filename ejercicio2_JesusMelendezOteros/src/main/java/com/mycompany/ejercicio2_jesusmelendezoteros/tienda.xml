@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tienda>
+    <articulo tipo="df">
+        <id>0</id>
+        <nombre>fds</nombre>
+        <descripcion>fd</descripcion>
+        <precio>dfs</precio>
+        <stock>dfs</stock>
+    </articulo>
+    <articulo tipo="sfd">
+        <id>1</id>
+        <nombre>fs</nombre>
+        <descripcion>sf</descripcion>
+        <precio>fsdg</precio>
+        <stock>sdfg</stock>
+    </articulo>
+    <articulo tipo="sfdg">
+        <id>2</id>
+        <nombre>fsg</nombre>
+        <descripcion>fdg</descripcion>
+        <precio>sfdg</precio>
+        <stock>sfg</stock>
+    </articulo>
+    <articulo tipo="fsg">
+        <id>3</id>
+        <nombre>sfdg</nombre>
+        <descripcion>gfs</descripcion>
+        <precio>fgsd</precio>
+        <stock>sfg</stock>
+    </articulo>
+</tienda>
